@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Premium Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <!-- Animated background orbs -->
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+
+        <div class="calculator">
+            <div class="calculator-header">
+                <span class="brand">NEURAL ENGINE</span>
+                <span class="status-dot"></span>
+            </div>
+            
+            <div class="display-container">
+                <div class="display-expression" id="expression"></div>
+                <input type="text"
+                        id="display"
+                        readonly
+                        placeholder="0">
+            </div>
+            <div class="buttons">
+                <button class="btn-clear" id="btn-c">C</button>
+                <button class="btn-backspace" id="btn-back">⌫</button>
+                <button class="btn-operator" id="btn-div">/</button>
+                <button class="btn-operator" id="btn-mul">*</button>
+
+                <button class="btn-number" id="btn-7">7</button>
+                <button class="btn-number" id="btn-8">8</button>
+                <button class="btn-number" id="btn-9">9</button>
+                <button class="btn-operator" id="btn-sub">-</button>
+
+                <button class="btn-number" id="btn-4">4</button>
+                <button class="btn-number" id="btn-5">5</button>
+                <button class="btn-number" id="btn-6">6</button>
+                <button class="btn-operator" id="btn-add">+</button>
+
+                <button class="btn-number" id="btn-1">1</button>
+                <button class="btn-number" id="btn-2">2</button>
+                <button class="btn-number" id="btn-3">3</button>
+                <button class="btn-equals" id="btn-eq">=</button>
+
+                <button class="btn-number btn-zero" id="btn-0">0</button>
+                <button class="btn-number" id="btn-dot">.</button>
+            </div>
+
+            <div class="calculator-footer">
+                <span>Made by Nishanth</span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
