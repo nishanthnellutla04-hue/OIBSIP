@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tribute page to Mahendra Singh Dhoni, Captain Cool — India's legendary cricket captain. Built for Oasis Infobyte.">
+    <meta name="keywords" content="MS Dhoni, Dhoni, Captain Cool, Indian Cricket, Tribute Page">
+    <meta name="author" content="Nishanth">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MS Dhoni | Captain Cool — Tribute Page">
+    <meta property="og:description" content="Explore the life, career stats, timeline, and legacy of Mahendra Singh Dhoni.">
+    <meta property="og:image" content="images/hero.jpg">
+
+    <!-- Favicon Placeholder -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏏</text></svg>">
+
+    <title>MS Dhoni | Captain Cool — Tribute</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">MSD<span>7</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#biography" class="nav-link">Biography</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#legacy" class="nav-link">Legacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-number-bg">7</span>
+                Mahendra Singh Dhoni
+            </h1>
+            <p class="hero-subheading">The Captain Who Changed Indian Cricket Forever</p>
+            <div class="hero-buttons">
+                <a href="#biography" class="btn btn-primary">Explore Journey</a>
+                <a href="#achievements" class="btn btn-outline">Career Highlights</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Biography Section -->
+        <section id="biography" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Biography</h2>
+                    <p class="section-subtitle">From Ranchi to the Summit of World Cricket</p>
+                </div>
+                <div class="bio-grid">
+                    <div class="bio-image reveal-on-scroll">
+                        <img src="images/dhoni1.jpg" alt="MS Dhoni receiving Padma Bhushan" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/7/76/Mahendra_Singh_Dhoni_receiving_Padma_Bhushan.jpg'">
+                    </div>
+                    <div class="bio-text">
+                        <p>Mahendra Singh Dhoni's journey began in the quiet town of Ranchi, Jharkhand. Coming from a humble middle-class background, he initially excelled in football and badminton. However, his school coach keshav Ranjan Banerjee spotted his wicketkeeping potential and guided him toward cricket.</p>
+                        <p>Before achieving international stardom, Dhoni worked as a Train Ticket Examiner (TTE) at the Kharagpur Railway Station. The struggle of balancing a railway job with first-class matches shaped the legendary mental toughness that would later define his captaincy.</p>
+                        <p>Dhoni made his international debut in December 2004. Known for his long hair and explosive hitting, he quickly captured the public's imagination. Under his leadership, India won the 2007 T20 World Cup, the 2011 ICC World Cup, and the 2013 Champions Trophy.</p>
+                        <p>After retiring from international cricket in 2020, Dhoni continued to lead Chennai Super Kings (CSK) in the Indian Premier League, guiding them to five historic trophies and showcasing his everlasting cricketing mind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Statistics Section -->
+        <section id="statistics" class="section bg-secondary">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">ICC Trophies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-cricket-bat-ball"></i></div>
+                        <div class="stat-number" data-target="538">0</div>
+                        <div class="stat-label">International Matches</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                        <div class="stat-number" data-target="17000" data-suffix="+">0</div>
+                        <div class="stat-label">International Runs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="stat-number" data-target="178">0</div>
+                        <div class="stat-label">Captaincy Wins</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Timeline</h2>
+                    <p class="section-subtitle">Milestones of an Extraordinary Career</p>
+                </div>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2004</span>
+                            <h3>International Debut</h3>
+                            <p>Made his debut in an ODI match against Bangladesh, quickly making a mark with his aggressive batting style.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2007</span>
+                            <h3>Inaugural T20 World Cup</h3>
+                            <p>Appointed captain and led a young Indian squad to a historic victory in South Africa, beating Pakistan in the final.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2008</span>
+                            <h3>Full Captaincy appointed</h3>
+                            <p>Took over as captain in all formats, leading India to the historical No. 1 spot in ICC Test Rankings by 2009.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2011</span>
+                            <h3>ICC ODI World Cup Victory</h3>
+                            <p>Hit the legendary match-winning six at Wankhede Stadium, ending India's 28-year wait for the ODI World Cup.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2013</span>
+                            <h3>ICC Champions Trophy</h3>
+                            <p>Won the Champions Trophy in England, becoming the only captain to win all three white-ball ICC events.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2020</span>
+                            <h3>International Retirement</h3>
+                            <p>Announced his retirement from international cricket on August 15, ending a legendary 16-year career.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2023</span>
+                            <h3>5th IPL Title with CSK</h3>
+                            <p>Led Chennai Super Kings to their fifth IPL trophy, cementing his status as one of the finest domestic leaders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section bg-secondary">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">Honours & Career Highlights</p>
+                </div>
+                <div class="achievements-grid">
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-earth-asia"></i></div>
+                        <h3>ICC Treble</h3>
+                        <p>The only captain in cricket history to win all three major ICC limited-overs trophies.</p>
+                    </div>
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-medal"></i></div>
+                        <h3>Civic Honours</h3>
+                        <p>Awarded the prestigious Padma Shri in 2009 and the Padma Bhushan in 2018 by the Govt of India.</p>
+                    </div>
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-award"></i></div>
+                        <h3>Khel Ratna</h3>
+                        <p>Bestowed with the Rajiv Gandhi Khel Ratna, India's highest sporting honour, in 2007.</p>
+                    </div>
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>ICC Hall of Fame</h3>
+                        <p>Inducted into the ICC Hall of Fame, recognizing his massive legacy and impact globally.</p>
+                    </div>
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Fastest Stumpings</h3>
+                        <p>Renowned for lightning reflexes behind the stumps, registering a world-record 0.08 seconds stumping.</p>
+                    </div>
+                    <div class="ach-card reveal-on-scroll">
+                        <div class="ach-icon-wrapper"><i class="fa-solid fa-flag-checkered"></i></div>
+                        <h3>Best Finisher</h3>
+                        <p>Universally respected as the greatest finisher of limited-overs cricket, staying cool under extreme pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="section quote-section">
+            <div class="container">
+                <blockquote class="quote-card reveal-on-scroll">
+                    <i class="fa-solid fa-quote-left quote-mark"></i>
+                    <p class="quote-text">"You don't play for the crowd. You play for the country."</p>
+                    <cite class="quote-author">— MS Dhoni</cite>
+                </blockquote>
+            </div>
+        </section>
+
+
+        <!-- Legacy Section -->
+        <section id="legacy" class="legacy-section">
+            <div class="legacy-overlay"></div>
+            <div class="container legacy-content reveal-on-scroll">
+                <h2 class="legacy-title">The Legacy</h2>
+                <p class="legacy-paragraph">Mahendra Singh Dhoni did not just win games; he elevated the confidence of an entire nation. Rising from a small-town ticket collector to standardizing captaincy, he proved that a calm mind and pure self-belief can master any pressure. He remains forever etched in cricketing history as Captain Cool — a symbol of quiet greatness and unparalleled leadership.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-content">
+            <p class="footer-credit">Created by Nishanth</p>
+            <p class="footer-tech">HTML5 &bull; CSS3 &bull; JavaScript</p>
+            <p class="footer-org">OASIS INFOBYTE Internship</p>
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top"><i class="fa-solid fa-chevron-up"></i></button>
+    </footer>
+
+    <!-- JavaScript script link -->
+    <script src="script.js"></script>
+</body>
+</html>
